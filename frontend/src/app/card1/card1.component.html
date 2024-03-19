@@ -1,0 +1,266 @@
+<div class="navbar">
+  <div class="logo">
+    <span>Sikkim House</span>
+  </div>
+  <br />
+
+  <div class="location">
+    <span><strong>'Kolkata'</strong></span>
+  </div>
+</div>
+
+<!-- caracsoule -->
+
+<h1></h1>
+<ul>
+  <li>
+    <img
+      src="https://source.unsplash.com/ezSFnAFi9hY/500x500"
+      alt="cut citrus fruits. "
+    />Lorem Ipsum
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/TIGDsyy0TK4/500x500"
+      alt="sliced mango. "
+    />Dolor Sit
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/TdDtTu2rv4s/500x500"
+      alt="a bunch of blueberries. "
+    />Amet Consectetur
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/eudGUrDdBB0/500x500"
+      alt="a pineapple sitting on a table. "
+    />Adipiscing Elit
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/eJH4f1rlG7g/500x500"
+      alt="frozen raspberries. "
+    />
+    Nunc Tortor
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/24RUrLSW1HI/500x500"
+      alt="a sliced strawberry. "
+    />Metus Mollis
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/h5yMpgOI5nI/500x500"
+      alt="an arrangement of assorted sliced fruits. "
+    />Congue Sagittis
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/2TYrR2IB72s/500x500"
+      alt="sliced watermelons. "
+    />Vestibulum Et
+  </li>
+  <li>
+    <img
+      src="https://source.unsplash.com/1cWZgnBhZRs/500x500"
+      alt="grapefruits, lemons, and pomegranates. "
+    />Donec Eget
+  </li>
+</ul>
+
+<!-- caracsoul end -->
+
+<!-- <div class="center-container">
+  <div class="sikkim-house-box">
+    <div class="care">
+      <h2>Sikkim House</h2>
+      <p>4/2, Middleton St, Kankaria Estates, Park Street area, Kolkata, West Bengal 700071</p>
+      <div class="rating">
+        <span>Rating: </span>
+        <span>4.2</span>
+      </div>
+      <div class="reviews">
+        <span>Very good</span>
+        <span> | </span>
+        <span>1,032 reviews</span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div
+  class="booking"
+  style="text-align: center; padding: 30px 20px; line-height: 0.3"
+>
+  <div
+    style="
+      border: 2px solid rgb(0, 0, 0);
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+    "
+  >
+    <p
+      style="
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: bold;
+      "
+    >
+      Sikkim House
+    </p>
+
+    <br />
+    <p>
+      4/2, Middleton St, Kankaria Estates, Park Street area, Kolkata, West
+      Bengal 700071
+    </p>
+
+    <div
+      class="button-container"
+      style="display: flex; flex-direction: row; gap: 8px; padding-bottom: 0px"
+    >
+      <button
+        style="
+          color: #1a73e8;
+          background-color: white;
+          width: 100px;
+          padding: 8px 15px; /* Adjust padding for better button appearance */
+          border: 2px solid #1a73e8; /* Add border with desired color */
+          border-radius: 10px;
+          cursor: pointer; /* Add cursor pointer to indicate interactivity */
+          transition: all 0.3s ease;
+        "
+        mat-button
+        (click)="navigate()"
+      >
+        Direction
+      </button>
+      <button
+        style="
+          color: #1a73e8;
+          background-color: white;
+          width: 100px;
+          padding: 8px 15px; /* Adjust padding for better button appearance */
+          border: 2px solid #1a73e8; /* Add border with desired color */
+          border-radius: 10px;
+          cursor: pointer; /* Add cursor pointer to indicate interactivity */
+          transition: all 0.3s ease;
+        "
+        mat-button
+        (click)="share()"
+      >
+        Share
+      </button>
+
+      <button
+        style="
+          color: #1a73e8;
+          background-color: white;
+          border: 2px solid #1a73e8;
+          width: 100px;
+          padding: 5px;
+          cursor: pointer;
+          border-radius: 10px;
+          transition: all 0.3s ease;
+        "
+        mat-button
+        (click)="bookRoom()"
+      >
+        Book a Room
+      </button>
+    </div>
+    <br />
+
+    <div>
+      <p
+        style="
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          text-decoration: underline;
+          font-size: 15px;
+          font-weight: bold;
+        "
+      >
+        Review
+      </p>
+      <br />
+      <div class="reviews">
+        <div class="rating">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div class="review-info">
+          <span>Very good &nbsp;</span>
+          <span>|&nbsp;</span>
+          <span>1,032 reviews</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- avail -->
+<div class="availability-details-container">
+  <div class="availability-details">
+    <div class="input-group">
+      <label for="checkInDate">Check-in Date:</label>
+      <input type="date" id="checkInDate" name="checkInDate">
+    </div>
+    <div class="input-group">
+      <label for="checkOutDate">Check-out Date:</label>
+      <input type="date" id="checkOutDate" name="checkOutDate">
+    </div>
+    <div class="input-group">
+      <label for="numberOfPersons">Number of Persons:</label>
+      <input type="number" id="numberOfPersons" name="numberOfPersons" min="1">
+    </div>
+    <div class="input-group">
+      <label for="freeCancellation">Free Cancellation only:</label>
+      <label class="switch">
+        <input type="checkbox" id="freeCancellation" name="freeCancellation">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+</div>
+<div
+  class="booking"
+  style="text-align: center; padding: 30px 20px; line-height: 0.3"
+>
+  <div
+    style="
+      border: 2px solid rgb(0, 0, 0);
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+    "
+  >
+    <!-- <p
+      style="
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: bold;
+      "
+    >
+      Sikkim House
+    </p> -->
+  </div>
+</div>
