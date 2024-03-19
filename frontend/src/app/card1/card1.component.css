@@ -156,22 +156,24 @@ body {
 
 
 /* avai */
+
+/* 
 .availability-details-container {
   display: flex;
-  justify-content: center; /* Align the container in the middle horizontally */
-  border: 1px solid #ccc; /* Add border around the container */
-  padding: 20px; /* Add padding */
-  border-radius: 10px; /* Add border radius for rounded corners */
+  justify-content: center; 
+  border: 1px solid #ccc; 
+  padding: 20px;
+  border-radius: 10px; 
 }
 
 .availability-details {
-  width: 300px; /* Set the width of the details section */
+  width: 300px; 
 }
 
 .input-group {
   margin-bottom: 10px;
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center; 
 }
 
 .input-group label {
@@ -180,11 +182,22 @@ body {
 
 .input-group input[type="date"],
 .input-group input[type="number"] {
-  width: calc(100% - 150px); /* Adjust input width to fill the remaining space */
-}
-
+  width: calc(100% - 150px); }
 .input-group .switch {
-  margin-left: auto; /* Push the toggle button to the right */
+  margin-left: auto;
 }
 
-/* Add your existing switch styles here */
+ */
+
+ .booking {
+  text-align: center;
+  padding: 30px 20px;
+  line-height: 1.5; /* Adjust line-height for better readability */
+}
+
+.booking-container {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
