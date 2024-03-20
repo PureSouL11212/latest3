@@ -35,6 +35,20 @@
   }
   
 
+
+  /* sikkim */
+
+
+  .book-room-button {
+    background-color: #1a73e8;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }}
+
 /* caraousel */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");

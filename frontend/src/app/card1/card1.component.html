@@ -55,7 +55,9 @@
 <!-- caracsoul end -->
 
 
-<div
+
+<!-- sikkim house -->
+ <div
   class="booking"
   style="text-align: center; padding: 30px 20px; line-height: 0.7;
   "
@@ -65,9 +67,11 @@
   border: 2px solid rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 0px 10px 10px rgba(0, 0, 0, 0.5);
-      padding: 30px;
-      border-radius: 10px;
-      display: inline-block;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 600px; /* Adjust maximum width */
+  margin: 0 auto;
     "
   >
     <p
@@ -91,7 +95,11 @@
 
     <div
       class="button-container"
-      style="display: flex; flex-direction: row; gap: 8px; padding-bottom: 0px"
+      style=" display: flex;
+      flex-wrap: wrap; /* Allow buttons to wrap to next line if necessary */
+      justify-content: left;
+      gap: 10px;
+      margin-top: 20px"
     >
       <button
         style="
@@ -179,7 +187,132 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
+
+
+
+
+
+<!-- <div class="booking">
+  <div class="booking-container" style="
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 0px 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 500px; /* Adjust maximum width */
+  margin: 0 auto; /* Center horizontally */
+  
+  
+  
+  
+  ">
+    <p class="title"
+    style="
+    text-decoration: underline;
+  font-size: 25px;
+  font-weight: bold;
+    
+    
+    "
+    
+    >Sikkim House</p>
+    <p>4/2, Middleton St, Kankaria Estates, Park Street area, Kolkata, West Bengal 700071</p>
+    <div class="button-container
+    "
+    
+    style=" display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to next line if necessary */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;"
+    
+    >
+      <button 
+      style="
+      color: #1a73e8;
+      background-color: white;
+      padding: 8px 15px;
+      border: 2px solid #1a73e8;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      "
+      
+      
+      
+      class="direction-button" (click)="navigate()">Direction</button>
+      <button 
+      style="
+      color: #1a73e8;
+      background-color: white;
+      padding: 8px 15px;
+      border: 2px solid #1a73e8;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      "
+      
+      
+      class="share-button" (click)="share()">Share</button>
+      <button 
+      style="
+      color: #1a73e8;
+      background-color: white;
+      padding: 8px 15px;
+      border: 2px solid #1a73e8;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      "
+      
+      
+      
+      class="book-room-button" (click)="bookRoom()">Book a Room</button>
+    </div>
+    <div class="reviews"
+    style="
+    margin-top: 20px;
+    
+    "
+    
+    >
+      <div class="rating"
+      style="display: flex;"
+      
+      >
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="review-info"
+      style="margin-top: 5px;"
+      
+      >
+        <span>Very good &nbsp;</span>
+        <span>|&nbsp;</span>
+        <span>1,032 reviews</span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- avail -->
 <div class="booking">
