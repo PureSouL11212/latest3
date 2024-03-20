@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from '../app.component';
-
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-card1',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule,NgFor],
   templateUrl: './card1.component.html',
   styleUrl: './card1.component.css'
 })
@@ -28,5 +28,18 @@ export class Card1Component {
     console.log("Book a room...");
   }
 
+// avai
 
+totalPersons: number = 0;
+
+adultsOptions: number[] = [0, 1, 2, 3];
+childrenOptions: number[] = [0, 1, 2, 3];
+
+constructor() { }
+
+calculateTotal(adultsValue: string, childrenValue: string) {
+  const adults = parseInt(adultsValue);
+  const children = parseInt(childrenValue);
+  this.totalPersons = adults + children;
+}
 }
