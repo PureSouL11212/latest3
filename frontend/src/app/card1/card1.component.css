@@ -312,3 +312,79 @@ body {
 
 /* avail ends */
 
+/* toggle and button   */
+
+/* Styles for the toggle button */
+.toggle-container {
+  display: flex;
+  /* align-items: left; */
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.toggle-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+input:checked + .toggle-slider {
+  background-color: #1a73e8;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+/* Styles for the "DONE" button */
+.done-button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.done-button:hover {
+  background-color: #0d47a1;
+}
