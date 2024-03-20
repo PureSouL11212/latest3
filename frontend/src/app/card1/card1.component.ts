@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
+import { FooterComponent } from '../footer/fotter.component';
 
 import { AppComponent } from '../app.component';
 import { NgFor } from '@angular/common';
@@ -8,7 +9,7 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-card1',
   standalone: true,
-  imports: [MatCardModule,NgFor],
+  imports: [MatCardModule,NgFor,FooterComponent],
   templateUrl: './card1.component.html',
   styleUrl: './card1.component.css'
 })
