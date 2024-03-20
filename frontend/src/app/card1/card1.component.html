@@ -213,62 +213,74 @@
   </div>
 </div>
 
-
 <!-- avail -->
 <div class="booking">
   <div class="booking-container">
-   <p style="display: flex; align-items: left; justify-content: left;
-  
-  
-   text-decoration: underline;
-   font-size: 15px;
-   font-weight: bold;
- 
-   
-   ">
-    Check availability
+    <p
+      style="
+        display: flex;
+        align-items: left;
+        justify-content: left;
 
-   </p>
-   <div class="date-container" style=" display: flex; /* Make the container a flexbox */
-   align-items: center; gap:1.4rem">
-    <label for="checkInDate">Check-in Date:</label>
-    <input type="date" id="checkInDate" name="checkInDate"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <label for="checkOutDate">Check-out Date:</label>
-    <input type="date" id="checkOutDate" name="checkOutDate">
-  </div>
-
-
-  <br>
-<!-- avail -->
-<div class="booking-form" >
-  <div class="row" style="display: flex;
-   justify-content: center;
-  
-  
-  
-">
-    <div class="input-group">
-      <label for="adults">Adults:</label>
-      <select #adultsSelect id="adults" name="adults" (change)="calculateTotal(adultsSelect.value, childrenSelect.value)">
-        <option *ngFor="let i of adultsOptions" [value]="i">{{ i }}</option>
-      </select>
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+      "
+    >
+      Check availability
+    </p>
+    <div
+      class="date-container"
+      style="
+        display: flex; /* Make the container a flexbox */
+        align-items: center;
+        gap: 1.4rem;
+      "
+    >
+      <label for="checkInDate">Check-in Date:</label>
+      <input type="date" id="checkInDate" name="checkInDate" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="checkOutDate">Check-out Date:</label>
+      <input type="date" id="checkOutDate" name="checkOutDate" />
     </div>
-    <div class="input-group">
-      <label for="children">Children:</label>
-      <select #childrenSelect id="children" name="children" (change)="calculateTotal(adultsSelect.value, childrenSelect.value)">
-        <option *ngFor="let i of childrenOptions" [value]="i">{{ i }}</option>
-      </select>
+
+    <br />
+
+
+    <!-- avail -->
+
+    
+    <div class="booking-form">
+      <div class="row" style="display: flex; justify-content: center; gap: 90px">
+        <div class="input-group">
+          <label for="adults">Adults:</label>
+          &nbsp;&nbsp;&nbsp;
+          <select
+            #adultsSelect
+            id="adults"
+            name="adults"
+            (change)="calculateTotal(adultsSelect.value, childrenSelect.value)"
+          >
+            <option *ngFor="let i of adultsOptions" [value]="i">{{ i }}</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="children">Children:</label>
+          &nbsp;&nbsp;&nbsp;
+
+          <select
+            #childrenSelect
+            id="children"
+            name="children"
+            (change)="calculateTotal(adultsSelect.value, childrenSelect.value)"
+          >
+            <option *ngFor="let i of childrenOptions" [value]="i">
+              {{ i }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="total">Total Persons: {{ totalPersons }}</div>
     </div>
-  </div>
-  <div class="total">
-    Total Persons: {{ totalPersons }}
   </div>
 </div>
-
-  </div>
-</div>
-
-
-
- 
-
