@@ -225,20 +225,52 @@ body {
 
 
 /* avail */
+.booking-container {
+  max-width: 600px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+
+
 .booking-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: 600px; /* Adjust maximum width as needed */
+  margin: 20px auto; /* Add margin for spacing */
 }
 
 .row {
   display: flex;
-  flex-direction: row;
+  gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .input-group {
-  margin-right: 10px; /* Adjust spacing between select elements */
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .total {
-  margin-top: 10px; /* Adjust spacing between selection and total */
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .date-container {
+    flex-direction: column; /* Stack date inputs vertically on smaller screens */
+  }
+
+  .date-container label,
+  .date-container input {
+    width: 100%; /* Set date input and label width to 100% for smaller screens */
+  }
 }
