@@ -55,6 +55,7 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
+    height: 20px;
     background: #383d4d;
     border-radius: 99em;
     border: 6px solid #1e1f26;
@@ -76,6 +77,7 @@ h1 {
 
 img {
   display: block;
+  height: auto;
   width: 100%;
   max-width: 100%;
   margin-bottom: 1.5rem;
