@@ -204,3 +204,50 @@ body {
 
 
 
+/* adult */
+
+.booking {
+  text-align: center;
+  padding: 30px 20px;
+  line-height: 1.5; /* Adjust line-height for better readability */
+}
+
+.booking-container {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.title {
+  text-decoration: underline;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.booking-form {
+  margin-top: 20px; /* Add margin between title and form */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Add margin between input groups */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+}
+
+.input-group label {
+  width: 150px;
+  margin-right: 10px; /* Add spacing between label and input */
+}
+
+.input-group input[type="date"] {
+  flex: 1; /* Allow inputs to grow and occupy remaining space */
+}
+
+.input-group select {
+  flex: 1; /* Allow select to grow and occupy remaining space */
+}
+
+.input-group .switch {
+  margin-left: auto; /* Push the switch to the right */
+}
