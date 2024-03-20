@@ -225,29 +225,60 @@ body {
 
 
 /* avail */
-
-.booking-container {
-  max-width: 600px; /* Adjust maximum width as needed */
-  margin: 0 auto; /* Center the container horizontally */
+/* Common styles for input elements */
+.input-group label {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
+.input-group input,
+.input-group select {
+  padding: 8px 12px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border-radius */
+  transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+/* Style for input focus */
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #1a73e8; /* Change border color on focus */
+}
+
+/* Common styles for text */
+.booking-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Container styles */
+.booking-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Add background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Date container styles */
 .date-container {
   display: flex;
   align-items: center;
   gap: 1.4rem;
-  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  flex-wrap: wrap;
 }
 
-
-
+/* Booking form styles */
 .booking-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px; /* Adjust maximum width as needed */
-  margin: 20px auto; /* Add margin for spacing */
+  max-width: 600px;
+  margin: 20px auto;
 }
 
+/* Row styles */
 .row {
   display: flex;
   gap: 70px;
@@ -255,23 +286,25 @@ body {
   justify-content: center;
 }
 
-.input-group {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
+/* Total styles */
 .total {
   margin-top: 10px;
+  font-weight: bold;
 }
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .date-container {
-    flex-direction: column; /* Stack date inputs vertically on smaller screens */
+    flex-direction: column;
   }
 
   .date-container label,
   .date-container input {
-    width: 100%; /* Set date input and label width to 100% for smaller screens */
+    width: 100%;
+  }
+
+  /* Adjust margin for better spacing */
+  .row {
+    gap: 20px;
   }
 }
