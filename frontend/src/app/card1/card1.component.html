@@ -366,8 +366,8 @@
             text-align: center;
             font-size: 20px;
             border: 2px solid green;
-            border-radius:20px;
-            padding:10px;
+            border-radius: 20px;
+            padding: 10px;
             background-color: #ffffff;
             display: inline-block;
             max-width: 800px; /* Adjust maximum width */
@@ -378,12 +378,20 @@
         </div>
         <br />
         <button
-        style="    background: #058a07;
-        color:white;
-        border-color:#058a07;
-        border-radius:10px;
-        "
-        (click)="generateNumber()"><i class="fa fa-phone" style="font-size:28px;color:rgb(255, 255, 255)"></i> &nbsp;Show Number</button><br />
+          style="
+            background: #058a07;
+            color: white;
+            border-color: #058a07;
+            border-radius: 10px;
+          "
+          (click)="generateNumber()"
+        >
+          <i
+            class="fa fa-phone"
+            style="font-size: 28px; color: rgb(255, 255, 255)"
+          ></i>
+          &nbsp;Show Number</button
+        ><br />
         <div
           style="
             color: red;
@@ -393,19 +401,55 @@
             font-size: bold;
             font-weight: bold;
             display: flex;
-  align-items: center;
-  justify-content:center
+            align-items: center;
+            justify-content: center;
           "
           *ngIf="showNumber"
           class="number"
         >
           {{ fixedNumber }}
         </div>
+        <br />
+        <button
+          style="
+            background: #058a07;
+            color: white;
+            border-color: #058a07;
+            border-radius: 10px;
+          "
+        >
+          <i
+            class="fa fa-envelope"
+            style="font-size: 28px; color: rgb(255, 255, 255)"
+          ></i>
+          Send Enquiry By Email
+        </button>
+        <br />
+        <button
+          style="
+            background: #058a07;
+            color: white;
+            border-color: #058a07;
+            border-radius: 10px;
+          "
+        >
+          <i
+            class="fa fa-globe"
+            style="font-size: 28px; color: rgb(255, 255, 255)"
+          ></i>
+          <a
+            style="color: white; text-decoration: none"
+            href="https://www.sikkimtourism.gov.in/Public/index "
+            target="_blank"
+            >&nbsp;Visit our Website</a
+          >
+        </button>
       </div>
     </div>
   </div>
 </div>
-
+<br />
+<br />
 <!-- facility.component.html -->
 
 <app-fotter></app-fotter>

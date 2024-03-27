@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from '../footer/fotter.component';
@@ -9,11 +9,11 @@ import { NgIf } from '@angular/common';
 import { BurgerComponent } from "../folder/burger/burger.component";
 
 @Component({
-    selector: 'app-card1',
-    standalone: true,
-    templateUrl: './card1.component.html',
-    styleUrl: './card1.component.css',
-    imports: [MatCardModule, NgFor,NgIf, FooterComponent, BurgerComponent]
+  selector: 'app-card1',
+  standalone: true,
+  templateUrl: './card1.component.html',
+  styleUrl: './card1.component.css',
+  imports: [MatCardModule, NgFor, NgIf, FooterComponent, BurgerComponent]
 })
 export class Card1Component {
   navigate() {
@@ -31,28 +31,25 @@ export class Card1Component {
     console.log("Book a room...");
   }
 
-// avai
+  // avai
 
-totalPersons: number = 0;
+  totalPersons: number = 0;
 
-adultsOptions: number[] = [0, 1, 2, 3];
-childrenOptions: number[] = [0, 1, 2, 3];
+  adultsOptions: number[] = [0, 1, 2, 3];
+  childrenOptions: number[] = [0, 1, 2, 3];
 
-constructor() { }
+  constructor() { }
 
-calculateTotal(adultsValue: string, childrenValue: string) {
-  const adults = parseInt(adultsValue);
-  const children = parseInt(childrenValue);
-  this.totalPersons = adults + children;
-}
+  calculateTotal(adultsValue: string, childrenValue: string) {
+    const adults = parseInt(adultsValue);
+    const children = parseInt(childrenValue);
+    this.totalPersons = adults + children;
+  }
+  // button
+  fixedNumber: string = '7947108812';
+  showNumber: boolean = false;
 
-
-// button
-fixedNumber: string = '1234567890'; // Your fixed 10-digit number
-showNumber: boolean = false;
-
-generateNumber() {
-  this.showNumber = true;
-}
-
+  generateNumber() {
+    this.showNumber = true;
+  }
 }
