@@ -440,7 +440,7 @@ input:checked + .toggle-slider:before {
   }
 }
 
-/* Tables (responsive using Bootstrap) */
+
 .facilities-table,
 .timing-table,
 .amenities-table {
