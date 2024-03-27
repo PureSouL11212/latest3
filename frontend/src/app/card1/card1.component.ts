@@ -49,7 +49,6 @@ export class Card1Component {
   fixedNumber: string = '7947108812';
   showNumber: boolean = false;
 
-  generateNumber() {
-    this.showNumber = true;
-  }
-}
+  toggleNumberVisibility() {
+    this.showNumber = !this.showNumber; // Toggles the visibility of the number
+  }}
