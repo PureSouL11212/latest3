@@ -47,6 +47,12 @@ calculateTotal(adultsValue: string, childrenValue: string) {
 }
 
 
-// tables
+// button
+fixedNumber: string = '1234567890'; // Your fixed 10-digit number
+showNumber: boolean = false;
+
+generateNumber() {
+  this.showNumber = true;
+}
 
 }
