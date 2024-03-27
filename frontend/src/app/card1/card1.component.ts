@@ -5,13 +5,14 @@ import { FooterComponent } from '../footer/fotter.component';
 
 import { AppComponent } from '../app.component';
 import { NgFor } from '@angular/common';
+import { BurgerComponent } from "../folder/burger/burger.component";
 
 @Component({
-  selector: 'app-card1',
-  standalone: true,
-  imports: [MatCardModule,NgFor,FooterComponent],
-  templateUrl: './card1.component.html',
-  styleUrl: './card1.component.css'
+    selector: 'app-card1',
+    standalone: true,
+    templateUrl: './card1.component.html',
+    styleUrl: './card1.component.css',
+    imports: [MatCardModule, NgFor, FooterComponent, BurgerComponent]
 })
 export class Card1Component {
   navigate() {
