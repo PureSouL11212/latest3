@@ -5,6 +5,7 @@ import { FooterComponent } from '../footer/fotter.component';
 
 import { AppComponent } from '../app.component';
 import { NgFor } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { BurgerComponent } from "../folder/burger/burger.component";
 
 @Component({
@@ -12,7 +13,7 @@ import { BurgerComponent } from "../folder/burger/burger.component";
     standalone: true,
     templateUrl: './card1.component.html',
     styleUrl: './card1.component.css',
-    imports: [MatCardModule, NgFor, FooterComponent, BurgerComponent]
+    imports: [MatCardModule, NgFor,NgIf, FooterComponent, BurgerComponent]
 })
 export class Card1Component {
   navigate() {
@@ -44,4 +45,8 @@ calculateTotal(adultsValue: string, childrenValue: string) {
   const children = parseInt(childrenValue);
   this.totalPersons = adults + children;
 }
+
+
+// tables
+
 }

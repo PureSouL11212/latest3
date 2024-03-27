@@ -440,3 +440,17 @@ input:checked + .toggle-slider:before {
   }
 }
 
+/* tables */
+
+.leftt .rowww{
+color:#000000;
+padding:20px;
+font-family: sans-serif;
+
+
+}
+.rowww span{
+  margin-top:200px;
+
+}
+/* facility.component.css */
