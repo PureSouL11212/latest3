@@ -417,7 +417,7 @@ input:checked + .toggle-slider:before {
 
 .box .two {
   flex-grow: 2; /* Box 2 will take up 2 times less space than Box 1 */
-  max-width: 20%; /* Set a maximum width of 20% for Box 2 */
+  max-width: 50%; /* Set a maximum width of 20% for Box 2 */
 }
 
 /* Add border to second box */
