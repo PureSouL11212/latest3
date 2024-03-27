@@ -397,3 +397,46 @@ input:checked + .toggle-slider:before {
 .done-button:hover {
   background-color: #0d47a1;
 }
+
+
+
+/* boxing */
+.box {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add space between flex items */
+}
+
+
+/* Define custom classes to adjust the flex properties */
+.box .one {
+  flex-grow: 8; /* Box 1 will take up 8 times more space than Box 2 */
+  max-width: 80%; /* Set a maximum width of 80% for Box 1 */
+}
+
+.box .two {
+  flex-grow: 2; /* Box 2 will take up 2 times less space than Box 1 */
+  max-width: 20%; /* Set a maximum width of 20% for Box 2 */
+}
+
+/* Add border to second box */
+.box .twoo {
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid red;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column; /* Change to column layout when screen width is less than or equal to 768px */
+  }
+
+  .box .one,
+  .box .two {
+    max-width: 100%; /* Set maximum width to 100% for both boxes when in column layout */
+    flex-grow: 1; /* Equalize the flex-grow property for both boxes in column layout */
+  }
+}
+
