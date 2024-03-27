@@ -430,27 +430,52 @@ input:checked + .toggle-slider:before {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .box {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .box .one,
   .box .two {
-    max-width: 100%; 
-    flex-grow: 1; 
+    max-width: 100%;
+    flex-grow: 1;
   }
 }
 
-/* tables */
-
-.leftt .rowww{
-color:#000000;
-padding:20px;
-font-family: sans-serif;
-
-
+/* Tables (responsive using Bootstrap) */
+.facilities-table,
+.timing-table,
+.amenities-table {
+  width: 100%; 
+  border-collapse: collapse; 
 }
-.rowww span{
-  margin-top:200px;
 
+.facilities-table th,
+.timing-table th,
+.amenities-table th,
+.facilities-table td,
+.timing-table td,
+.amenities-table td {
+  padding: 10px;
+ 
+  text-align: left;
 }
-/* facility.component.css */
+
+/* Optional: Styling for table headers */
+.facilities-title,
+.timing-title,
+.amenities-title {
+  color: #1a73e8;
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Media query for table responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .facilities-table,
+  .timing-table,
+  .amenities-table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
