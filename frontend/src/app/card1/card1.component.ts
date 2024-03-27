@@ -46,7 +46,7 @@ export class Card1Component {
     this.totalPersons = adults + children;
   }
   // button
-  fixedNumber: string = '7947108812';
+  fixedNumber: string = '+91 7947108812';
   showNumber: boolean = false;
 
   toggleNumberVisibility() {
