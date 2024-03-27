@@ -411,13 +411,13 @@ input:checked + .toggle-slider:before {
 
 /* Define custom classes to adjust the flex properties */
 .box .one {
-  flex-grow: 8; /* Box 1 will take up 8 times more space than Box 2 */
-  max-width: 80%; /* Set a maximum width of 80% for Box 1 */
+  flex-grow: 8; 
+  max-width: 80%; 
 }
 
 .box .two {
-  flex-grow: 2; /* Box 2 will take up 2 times less space than Box 1 */
-  max-width: 50%; /* Set a maximum width of 20% for Box 2 */
+  flex-grow: 2; 
+  max-width: 50%; 
 }
 
 /* Add border to second box */
@@ -430,13 +430,13 @@ input:checked + .toggle-slider:before {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .box {
-    flex-direction: column; /* Change to column layout when screen width is less than or equal to 768px */
+    flex-direction: column; 
   }
 
   .box .one,
   .box .two {
-    max-width: 100%; /* Set maximum width to 100% for both boxes when in column layout */
-    flex-grow: 1; /* Equalize the flex-grow property for both boxes in column layout */
+    max-width: 100%; 
+    flex-grow: 1; 
   }
 }
 
